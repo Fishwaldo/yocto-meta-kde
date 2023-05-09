@@ -80,13 +80,6 @@ inherit cmake_qt5
 inherit pkgconfig
 # TODO skip inherit of cmake_plasma for now because it leads to build errors for native package
 
-do_install:append() {
-    # dirty workaround for aurora crash on Wayland
-    rm -rf ${D}/${libdir}/plugins/org.kde.kdecoration2/
-
-    install -d ${D}/${sysconfdir}/xdg
-    install -m 644 ${WORKDIR}/kwinrc ${D}/${sysconfdir}/xdg/kwinrc
-}
 
 FILES_SOLIBSDEV = ""
 FILES:${PN} += " \
