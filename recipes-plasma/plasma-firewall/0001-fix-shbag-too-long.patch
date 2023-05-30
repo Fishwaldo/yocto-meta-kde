@@ -1,0 +1,19 @@
+From 51450822ad231518c111406786a4bef8c283fb46 Mon Sep 17 00:00:00 2001
+From: Justin Hammond <justin@dynam.ac>
+Date: Tue, 30 May 2023 15:45:21 +0000
+Subject: [PATCH] fix shbag too long
+
+---
+ kcm/backends/ufw/helper/kcm_ufw_helper.py.cmake | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/kcm/backends/ufw/helper/kcm_ufw_helper.py.cmake b/kcm/backends/ufw/helper/kcm_ufw_helper.py.cmake
+index c0430c7..6d9714b 100755
+--- a/kcm/backends/ufw/helper/kcm_ufw_helper.py.cmake
++++ b/kcm/backends/ufw/helper/kcm_ufw_helper.py.cmake
+@@ -1,4 +1,4 @@
+-#!@PYTHON_EXECUTABLE@
++#!/usr/bin/python3
+ 
+ # SPDX-License-Identifier: GPL-3.0-or-later
+ # SPDX-FileCopyrightText: 2010  Darwin M. Bautista <djclue917@gmail.com>

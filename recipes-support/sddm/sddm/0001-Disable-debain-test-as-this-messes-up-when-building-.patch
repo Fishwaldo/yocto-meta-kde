@@ -1,0 +1,38 @@
+From 0ee274d6f22405c4bb2dc5e3bedd4be27341c3fc Mon Sep 17 00:00:00 2001
+From: Justin Hammond <justin@dynam.ac>
+Date: Tue, 30 May 2023 16:38:21 +0000
+Subject: [PATCH] Disable debain test as this messes up when building on
+ deb/ubuntu machines
+
+---
+ services/CMakeLists.txt | 18 ++++++------------
+ 1 file changed, 6 insertions(+), 12 deletions(-)
+
+diff --git a/services/CMakeLists.txt b/services/CMakeLists.txt
+index 6faae59..2bc9fcf 100644
+--- a/services/CMakeLists.txt
++++ b/services/CMakeLists.txt
+@@ -19,17 +19,11 @@ else()
+ endif()
+ configure_file("${CMAKE_CURRENT_SOURCE_DIR}/sddm-greeter.pam.in" "${CMAKE_CURRENT_BINARY_DIR}/sddm-greeter.pam")
+ 
+-if(EXISTS "/etc/debian_version")
+-    install(FILES debian.sddm-autologin.pam DESTINATION ${CMAKE_INSTALL_FULL_SYSCONFDIR}/pam.d RENAME sddm-autologin)
+-    install(FILES debian.sddm-greeter.pam DESTINATION ${CMAKE_INSTALL_FULL_SYSCONFDIR}/pam.d RENAME sddm-greeter)
+-    install(FILES debian.sddm.pam DESTINATION ${CMAKE_INSTALL_FULL_SYSCONFDIR}/pam.d RENAME sddm)
++if(HAVE_PAM_FAILLOCK)
++    install(FILES sddm-autologin.pam DESTINATION ${CMAKE_INSTALL_FULL_SYSCONFDIR}/pam.d RENAME sddm-autologin)
+ else()
+-    if(HAVE_PAM_FAILLOCK)
+-        install(FILES sddm-autologin.pam DESTINATION ${CMAKE_INSTALL_FULL_SYSCONFDIR}/pam.d RENAME sddm-autologin)
+-    else()
+-        install(FILES sddm-autologin-tally2.pam DESTINATION ${CMAKE_INSTALL_FULL_SYSCONFDIR}/pam.d RENAME sddm-autologin)
+-    endif()
+-
+-    install(FILES sddm.pam DESTINATION ${CMAKE_INSTALL_FULL_SYSCONFDIR}/pam.d RENAME sddm)
+-    install(FILES "${CMAKE_CURRENT_BINARY_DIR}/sddm-greeter.pam" DESTINATION ${CMAKE_INSTALL_FULL_SYSCONFDIR}/pam.d RENAME sddm-greeter)
++    install(FILES sddm-autologin-tally2.pam DESTINATION ${CMAKE_INSTALL_FULL_SYSCONFDIR}/pam.d RENAME sddm-autologin)
+ endif()
++
++install(FILES sddm.pam DESTINATION ${CMAKE_INSTALL_FULL_SYSCONFDIR}/pam.d RENAME sddm)
++install(FILES "${CMAKE_CURRENT_BINARY_DIR}/sddm-greeter.pam" DESTINATION ${CMAKE_INSTALL_FULL_SYSCONFDIR}/pam.d RENAME sddm-greeter)

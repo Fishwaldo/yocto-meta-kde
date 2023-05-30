@@ -29,6 +29,7 @@ SRC_URI = " \
     file://sddm.conf.plasma-bigscreen \
     file://sddm.pam \
     file://sddm-autologin.pam \
+    file://0001-Disable-debain-test-as-this-messes-up-when-building-.patch \
 "
 S = "${WORKDIR}/git"
 

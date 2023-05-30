@@ -27,6 +27,9 @@ DEPENDS = " \
     purpose \
     qtdeclarative \
     qtwebview \
+    appstream \
+    kuserfeedback \
+    packagekit-qt \
 "
 
 inherit cmake_plasma
@@ -37,4 +40,6 @@ FILES:${PN} += " \
     ${libdir}/plasma-discover \
     ${libdir}/plugins/plasma/kcms/systemsettings/* \
     ${datadir}/kpackage/kcms/kcm_updates \
+    ${datadir}/libdiscover/categories/ \
 "
+

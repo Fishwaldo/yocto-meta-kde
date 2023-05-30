@@ -26,9 +26,13 @@ DEPENDS = " \
     networkmanager-qt \
     plasma-framework \
     qtwebchannel \
+    qtwebengine \
+    libcap \
 "
 
 inherit cmake_plasma
+#cmake files include sysroot paths
+inherit cmake_sysroot
 
 FILES:${PN} += " \
     ${datadir}/ksysguard \
