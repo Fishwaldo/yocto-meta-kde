@@ -2,9 +2,8 @@
 # SPDX-License-Identifier: CC0-1.0
 
 require ${PN}.inc
-# use unreleased tag for fixing build with Qt 5.15.3
-SRCREV = "58a35178b75aada974088350f9b89db45f5c3800"
-PV = "0.19.0+git${SRCPV}"
+#This is v0.20.0 tag. 
+SRCREV = "a9a664df36c2109d999aa841df7c8856ff68f350"
 
 SRC_URI += "git://github.com/sddm/${BPN};nobranch=1;protocol=https \
            "
