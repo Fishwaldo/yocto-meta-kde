@@ -4,7 +4,7 @@
 
 DESCRIPTION = "Add-ons for the Kirigami framework"
 HOMEPAGE = "https://invent.kde.org/libraries/kirigami-addons"
-LICENSE = "GPL-2.0"
+LICENSE = "GPL-2.0-only"
 LIC_FILES_CHKSUM = "file://LICENSES/GPL-2.0-only.txt;md5=93e64b4a83c7e441e48bbdeeea05c977"
 PR = "r0"
 

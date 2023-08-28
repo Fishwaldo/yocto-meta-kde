@@ -5,7 +5,7 @@
 SUMMARY = "Components necessary to integrate browsers into the Plasma Desktop"
 DESCRIPTION = "Components necessary to integrate browsers into the Plasma Desktop"
 HOMEPAGE = "https://invent.kde.org/plasma/plasma-browser-integration/"
-LICENSE = "GPL-2.0+ | GPL-3.0+ | CCO-1 | MIT"
+LICENSE = "GPL-2.0-or-later | GPL-3.0-or-later | CCO-1 | MIT"
 LIC_FILES_CHKSUM = " \
     file://LICENSES/GPL-2.0-or-later.txt;md5=9e2385fe012386d34dcc5c9863070881 \
     file://LICENSES/GPL-3.0-or-later.txt;md5=49fc03046e56a282c0c743b5d3a55b7c \

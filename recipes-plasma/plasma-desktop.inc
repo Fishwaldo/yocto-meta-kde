@@ -40,6 +40,12 @@ DEPENDS = " \
     kauth-native \
     kauth \
     libxkbfile \
+    libaccounts-qt \
+    xf86-input-libinput \
+    xf86-input-evdev \
+    packagekit-qt \
+    kaccounts-integration \
+    intltool-native \
 "
 
 inherit cmake_plasma
@@ -58,6 +64,8 @@ FILES:${PN} += " \
     ${OE_QMAKE_PATH_QML} \
     ${OE_QMAKE_PATH_PLUGINS} \
     ${libdir}/kconf_update_bin \
+    ${datadir}/accounts/providers \
+    ${datadir}/accounts/services \
 "
 
 RDEPENDS:${PN} += " \
@@ -67,3 +75,5 @@ RDEPENDS:${PN} += " \
     qtquickcontrols-qmlplugins \
     gawk \
 "
+
+INSANE_SKIP:${PN} += "dev-so"

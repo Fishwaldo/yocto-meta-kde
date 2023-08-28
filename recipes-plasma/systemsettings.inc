@@ -4,7 +4,7 @@
 
 DESCRIPTION = "System Settings"
 HOMEPAGE = ""
-LICENSE = "GPL-2.0"
+LICENSE = "GPL-2.0-only"
 LIC_FILES_CHKSUM = "file://LICENSES/GPL-3.0-only.txt;md5=49fc03046e56a282c0c743b5d3a55b7c"
 PR = "r0"
 

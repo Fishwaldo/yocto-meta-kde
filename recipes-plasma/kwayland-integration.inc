@@ -4,7 +4,7 @@
 
 DESCRIPTION = "KWayland Integration"
 HOMEPAGE = ""
-LICENSE = "LGPL-2.1"
+LICENSE = "LGPL-2.1-only"
 LIC_FILES_CHKSUM = "file://LICENSES/LGPL-2.1-only.txt;md5=fabba2a3bfeb22a6483d44e9ae824d3f"
 PR = "r0"
 

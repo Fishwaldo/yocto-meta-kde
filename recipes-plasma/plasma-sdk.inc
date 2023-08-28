@@ -5,7 +5,7 @@
 SUMMARY = "Applications useful for Plasma development"
 DESCRIPTION = "Applications useful for Plasma development"
 HOMEPAGE = "https://invent.kde.org/plasma/plasma-sdk"
-LICENSE = "BSD-2 | CC0-1 | GPL-2.0 | GPL-2.0+ | LGPL-2.0 | LGPL-2.0+ "
+LICENSE = "BSD-2 | CC0-1 | GPL-2.0-only | GPL-2.0-or-later | LGPL-2.0-only | LGPL-2.0-or-later "
 LIC_FILES_CHKSUM = " \
     file://LICENSES/BSD-2-Clause.txt;md5=63d6ee386b8aaba70b1bf15a79ca50f2 \
     file://LICENSES/CC0-1.0.txt;md5=65d3616852dbf7b1a6d4b53b00626032 \

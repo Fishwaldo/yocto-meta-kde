@@ -5,7 +5,7 @@
 SUMMARY = "KPeople VCard Backend"
 DESCRIPTION = "Expose VCard contacts to KPeople"
 HOMEPAGE = "https://invent.kde.org/pim/kpeoplevcard"
-LICENSE = "LGPL-2.1+ & BSD-3-Clause"
+LICENSE = "LGPL-2.1-or-later & BSD-3-Clause"
 LIC_FILES_CHKSUM = " \
     file://COPYING;md5=4fbd65380cdd255951079008b364516c \
 "
