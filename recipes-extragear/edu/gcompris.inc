@@ -27,7 +27,7 @@ RDEPENDS:${PN} += " \
     qtmultimedia-qmlplugins \
 "
 
-SRC_URI = "git://invent.kde.org/education/${BPN};nobranch=1;protocol=https"
+SRC_URI = "gitsm://invent.kde.org/education/${BPN};nobranch=1;protocol=https"
 S = "${WORKDIR}/git"
 
 inherit qmake5_base

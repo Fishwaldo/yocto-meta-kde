@@ -3,5 +3,5 @@
 
 require ${PN}.inc
 SRC_URI = "https://download.kde.org/stable/plasma/${PV}/aura-browser-${PV}.tar.xz"
-SRC_URI[sha256sum] = "c56f5d69acd76d22f199ae42ce46fee1f82db8ce70b9fc1c376df4a9fb4c1c6f"
+SRC_URI[sha256sum] = "b900d163bebb9a74cd92ed2091363a1a14c266849d339f586b3a618c1f1feb5f"
 

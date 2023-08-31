@@ -29,6 +29,11 @@ DEPENDS = " \
     kdecoration \
 "
 
-
 KF5_REUSE_LICENSECHECK_ENABLED="1"
 
+FILES:${PN} += " \
+    ${datadir}/plasma/look-and-feel/org.kde.oxygen \
+    ${datadir}/color-schemes/ \
+    ${datadir}/icons/ \
+    ${datadir}/kstyle/themes/ \
+"

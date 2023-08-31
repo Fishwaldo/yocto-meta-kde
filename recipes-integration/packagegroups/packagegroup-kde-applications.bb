@@ -24,5 +24,4 @@ RDEPENDS:${PN} = " \
     \
     elisa \
     \
-    kjournald-browser \
 "
